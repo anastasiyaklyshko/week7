@@ -68,11 +68,81 @@
     background-color: white;
     justify-self: center;
     font-size: 2vw;
+    margin: 2%;
 }
 
 @media screen and (min-width:300px) and (max-width:599px) {
+    .containermain {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        height: 100vh;
+        width: 100vw;
+    }
 
+    .name {
+        display: grid;
+        background-color: gainsboro;
+        grid-template-columns: 1fr;
+        font-size: 2vw;
+
+    }
+
+    .leftsection {
+        background-color: blueviolet;
+        grid-area: 2/1/5/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 2vw;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mainsection1 {
+        grid-area: 2/1/3/2;
+    }
+
+    .mainsection2 {
+        grid-area: 3/1/4/2;
+    }
+
+    .mainsection3 {
+        grid-area: 4/1/5/2;
+    }
+
+    .rightsection {
+        display: none;
+    }
+
+    .footersection {
+        display: grid;
+        background-color: gainsboro;
+        grid-template-columns: 1fr;
+        grid-area: 5/1/8/2;
+        width: 100%;
+        max-width: 100%;
+        font-size: 2vw;
+    }
+
+    .footersection1,
     .footersection2,
+    .footersection3,
+    .footersection4 {
+        background-color: white;
+        justify-self: stretch;
+        font-size: 2vw;
+        margin: 2%;
+    }
+
+    .footersection1 {
+        grid-area: 2/1/3/2;
+    }
+
+    .footersection2 {
+        grid-area: 3/1/4/2;
+
+    }
+
     .footersection3,
     .footersection4 {
         display: none;
