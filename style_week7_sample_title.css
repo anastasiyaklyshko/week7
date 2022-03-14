@@ -1,0 +1,88 @@
+div>.blue,
+div>.red,
+div>.green,
+div>.orange,
+div>.yellow,
+div>.purple {
+    border: 1px solid white;
+    color: aliceblue;
+    font-size: 2vw;
+
+}
+
+div>.blue {
+    background-color: blue;
+}
+
+div>.red {
+    background-color: rgba(255, 72, 0, 0.753);
+
+}
+
+div>.green {
+    background-color: rgb(106, 255, 47);
+}
+
+div>.orange {
+    background-color: rgb(245, 147, 20);
+}
+
+div>.yellow {
+    background-color: rgb(245, 230, 20);
+}
+
+div>.purple {
+    background-color: purple;
+}
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 50px);
+}
+
+.container5 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.container6 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.container7 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.container7>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
